@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brym codeIN</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link href="dist/output.css" rel="stylesheet" />
+  <script src="js/scroll.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="font-sans relative bg-gradient-to-br from-indigo-50 to-[#334155] text-gray-900">
+
+  <header class="sticky top-0 z-50 bg-[#030404] text-white shadow-md">
+    <div class="container mx-auto px-4 py-6 flex justify-between items-center">
+      <div class="flex items-center transition-transform transform hover:scale-105 duration-300 cursor-pointer">
+        <a href="#about">
+        <img src="assets/images/logo2-removebg-preview2.webp"
+            alt="Logo personal - codeIN"
+            class="h-10 sm:h-12 md:h-14 w-auto" />
+        </a>
+      </div>
+      <nav class="flex flex-wrap gap-3 justify-center sm:justify-end">
+        <a href="#about"
+          class="btn btn-accent gap-3 text-white px-5 py-3 shadow-md hover:bg-neutral hover:scale-105 transition-transform duration-300 w-full sm:w-auto mx-auto">
+          <i class="fas fa-user"></i> Sobre mí
+        </a>
+
+        <a href="#skills"
+          class="btn btn-accent gap-3 text-white px-5 py-3 shadow-md hover:bg-neutral hover:scale-105 transition-transform duration-300 w-full sm:w-auto mx-auto">
+          <i class="fa-solid fa-screwdriver-wrench"></i> Tecnologías
+        </a>
+
+        <a href="#projects"
+          class="btn btn-accent gap-3 text-white px-5 py-3 shadow-md hover:bg-neutral hover:scale-105 transition-transform duration-300 w-full sm:w-auto mx-auto">
+          <i class="fas fa-laptop-code"></i> Proyectos
+        </a>
+
+        <a href="#contact"
+          class="btn btn-accent gap-3 text-white px-5 py-3 shadow-md hover:bg-neutral hover:scale-105 transition-transform duration-300 w-full sm:w-auto mx-auto">
+          <i class="fas fa-envelope"></i> Contacto
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <section id="about" class="text-center py-24 scroll-mt-28">
+    <h2 class="text-2xl font-bold mb-4 text-accent">Perfil profesional</h2>
+    <a href="#about">
+    <img 
+      src="assets/images/Made with insMind-fotoPerfil.webp" 
+      alt="Foto de perfil de Brayan" 
+      class="h-32 w-32 object-cover rounded-full mx-auto mb-6 shadow-lg transition-transform transform hover:scale-105 duration-300"
+    />
+    </a>
+    <h3 class="text-2xl font-semibold mb-2">Hola, soy <span class="text-accent">Brayan Mesa Palacio</span></h3> 
+    <p class="text-lg text-gray-800 mb-8">Desarrollador Full Stack Jr. | C# • Java • Python • .NET • SQL</p>
+
+    <div class="card w-full max-w-md bg-neutral shadow-xl mx-auto transition-transform transform hover:scale-105 duration-300">
+      <div class="card-body items-center text-center">
+        <h4 class="card-title text-accent text-xl font-semibold">Sobre mí</h4>
+        <p class="text-gray-400">
+          Tecnólogo en Análisis y Desarrollo de Sistemas de Información con conocimientos sólidos en el
+          desarrollo FullStack, tanto en el backend como en el frontend. He participado activamente en el diseño y
+          desarrollo de aplicaciones empresariales, utilizando diferentes tipos de tecnologías para entregar productos con excelente calidad. 
+          Apasionado por la creación de soluciones eficientes, escalables y centradas en el usuario.
+        </p>
+        <div class="card-actions mt-4">
+          <a href="#projects" class="flex items-center justify-center gap-3 bg-accent text-white px-5 py-3 rounded-full shadow-md hover:bg-[#184297] hover:scale-105 transition-transform duration-300 w-full sm:w-auto mx-auto">
+            <i class="fas fa-rocket mr-2"></i>Ver proyectos
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section id="skills" class="py-24 px-6 text-center scroll-mt-28">
+    <div class="max-w-6xl mx-auto">
+      <!-- <div class="bg-white shadow-xl rounded-3xl p-10 border border-gray-200"> -->
+      <h3 class="text-4xl font-bold text-accent mb-12">Tecnologías y habilidades</h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 w-full">
+
+        <div class="flex flex-col items-center space-y-2 w-full px-4" data-aos="fade-up">
+          <img src="assets/images/java.png" alt="Java Logo" class="h-12 w-auto hover:scale-105 transition-transform duration-300" role="button">
+          <span class="text-sm font-medium">Java</span>
+          <div class="w-full bg-gray-300 rounded-full h-3 overflow-hidden">
+            <div class="bg-accent h-3 rounded-full w-3/4"></div>
+          </div>
+        </div>
+        <div class="flex flex-col items-center space-y-2 w-full px-4" data-aos="fade-up">
+          <i class="fas fa-code text-4xl text-purple-600 transition-transform transform hover:scale-105 duration-300" role="button"></i>
+          <span class="text-sm font-medium">C# / .NET</span>
+          <div class="w-full bg-gray-300 rounded-full h-3 overflow-hidden">
+            <div class="bg-accent h-3 rounded-full w-3/4"></div>
+          </div>
+        </div>
+        <div class="flex flex-col items-center space-y-2 w-full px-4" data-aos="fade-up">
+          <img src="assets/images/piton.png" alt="Python Logo" class="h-12 w-auto hover:scale-105 transition-transform duration-300" role="button">
+          <span class="text-sm font-medium">Python</span>
+          <div class="w-full bg-gray-300 rounded-full h-3 overflow-hidden">
+            <div class="bg-accent h-3 rounded-full w-3/4"></div>
+          </div>
+        </div>
+        <div class="flex flex-col items-center space-y-2 w-full px-4" data-aos="fade-up">
+          <img src="assets/images/js.png" alt="JavaScript Logo" class="h-12 w-auto hover:scale-105 transition-transform duration-300" role="button">
+          <span class="text-sm font-medium">JavaScript</span>
+          <div class="w-full bg-gray-300 rounded-full h-3 overflow-hidden">
+            <div class="bg-accent h-3 rounded-full w-2/4"></div>
+          </div>
+        </div>
+        <div class="flex flex-col items-center space-y-2 w-full px-4" data-aos="fade-up">
+          <img src="assets/images/html-5.png" alt="html Logo" class="h-12 w-auto hover:scale-105 transition-transform duration-300" role="button">
+          <span class="text-sm font-medium">HTML5</span>
+        </div>
+        <div class="flex flex-col items-center space-y-2 w-full px-4" data-aos="fade-up">
+          <img src="assets/images/css-3.png" alt="css Logo" class="h-12 w-auto hover:scale-105 transition-transform duration-300" role="button">
+          <span class="text-sm font-medium">CSS3</span>
+        </div>
+        <div class="flex flex-col items-center space-y-2 w-full px-4" data-aos="fade-up">
+          <i class="fas fa-database text-4xl text-indigo-700 transition-transform transform hover:scale-105 duration-300" role="button"></i>
+          <span class="text-sm font-medium">SQL / MySQL</span>
+        </div>
+        <div class="flex flex-col items-center space-y-2 w-full px-4" data-aos="fade-up">
+          <img src="assets/images/social.png" alt="Git Logo" class="h-12 w-auto hover:scale-105 transition-transform duration-300" role="button">
+          <span class="text-sm font-medium">Git</span>
+        </div>
+        <div class="flex flex-col items-center space-y-2 w-full px-4" data-aos="fade-up">
+          <img src="assets/images/github.png" alt="GitHub Logo" class="h-12 w-auto hover:scale-105 transition-transform duration-300" role="button">
+          <span class="text-sm font-medium">GitHub</span>
+        </div>
+        <div class="flex flex-col items-center space-y-2 w-full px-4" data-aos="fade-up">
+          <i class="fas fa-server text-4xl text-blue-700 transition-transform transform hover:scale-105 duration-300" role="button"></i>
+          <span class="text-sm font-medium">ASP.NET</span>
+        </div>
+        <div class="flex flex-col items-center space-y-2 w-full px-4" data-aos="fade-up">
+            <i class="fas fa-terminal text-4xl text-blue-500 transition-transform transform hover:scale-105 duration-300" role="button"></i>
+            <span class="text-sm font-medium">VS & VS Code</span>
+        </div>
+        <div class="flex flex-col items-center space-y-2 w-full px-4" data-aos="fade-up">
+          <i class="fas fa-code-branch text-4xl text-emerald-600 transition-transform transform hover:scale-105 duration-300" role="button"></i>
+          <span class="text-sm font-medium">Metodologías Ágiles</span>
+        </div>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="py-24 px-6 scroll-mt-28">
+    <div class="max-w-6xl mx-auto">
+      <!-- <div class="bg-white shadow-xl rounded-3xl p-10 border border-gray-200"> -->
+      <div class="shadow-xl rounded-3xl p-10">
+        <h3 class="text-4xl font-bold text-center text-accent mb-12">Proyectos destacados</h3>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+
+          <!-- Proyecto 1 -->
+          <div class="rounded-xl overflow-hidden shadow-sm border border-gray-400">
+            <div class="transition-transform transform hover:scale-105 duration-300">
+              <figure>
+                <img src="assets/images/logoSistemaBibliotecario.png" alt="Vista previa de Library Manager" class="w-full h-40 object-cover rounded-t-xl" />
+              </figure>
+              <div class="p-4 text-center">
+                <h4 class="text-xl font-semibold text-accent mb-2">Library Manager</h4>
+                <p class="text-wrap mb-4">
+                  Aplicación de escritorio para un sistema bibliotecario, con funcionalidades como registro, busqueda, eliminación y diferentes gestiones de recursos. Desarrollado con C#, MySQL y ASP.NET Framework.
+                </p>
+                <a href="https://github.com/FourscodeIN" target="_blank"
+                  class="inline-flex items-center gap-2 bg-gray-800 text-white px-5 py-2 rounded-lg hover:bg-black transition duration-300">
+                  <i class="fab fa-github text-lg"></i> Ver en GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Proyecto 2 -->
+          <div class=" rounded-xl overflow-hidden shadow-sm border border-gray-400">
+            <div class="transition-transform transform hover:scale-105 duration-300">
+              <figure>
+                <img src="assets/images/NovaBank.png" alt="Vista previa de NovaBank" class="w-full h-40 object-cover rounded-t-xl" />
+              </figure>
+              <div class="p-4 text-center">
+                <h4 class="text-xl font-semibold text-accent mb-2">NovaBank</h4>
+                <p class="text-wrap mb-4">
+                  Aplicación de escritorio bancario con funcionalidades como transacciones, depósitos, retiros y consultas y gesitón de clientes. Desarrollado con Java, MySQL para el BackEnd y ASP Forms para el FrontEnd.
+                </p>
+                <a href="https://github.com/FourscodeIN/Aplicacion_Escritorio_JAVA" target="_blank"
+                  class="inline-flex items-center gap-2 bg-gray-800 text-white px-5 py-2 rounded-lg hover:bg-black transition duration-300">
+                  <i class="fab fa-github text-lg"></i> Ver en GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Proyecto 3 -->
+          <div class="rounded-xl overflow-hidden shadow-sm border border-gray-400"> <!-- bg-gray-100 -->
+            <div class="transition-transform transform hover:scale-105 duration-300">
+              <figure>
+                <img src="assets/images/servipronew.png" alt="Vista previa de ServiPro" class="w-full h-40 object-cover rounded-t-xl" />
+              </figure>
+              <div class="p-4 text-center">
+                <h4 class="text-xl font-semibold text-accent mb-2">ServiPro</h4>
+                <p class="text-wrap mb-4">
+                  Página Web para una asociación de servicio personalizado en el área de sistemas, ofreciendo así diferentes servicios como lo son soporte técnico, reparación y venta de insumos. Desarrollada con HTML5, TailwindCSS y JavaScript.
+                </p>
+                <a href="https://github.com/FourscodeIN" target="_blank"
+                  class="inline-flex items-center gap-2 bg-gray-800 text-white px-5 py-2 rounded-lg hover:bg-black transition duration-300">
+                  <i class="fab fa-github text-lg"></i> Ver en GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="py-24 px-6 text-center scroll-mt-28">
+    <div class="max-w-xl mx-auto">
+      <h3 class="text-3xl font-extrabold text-accent mb-6">Contacto</h3>
+      <p class="text-white mb-4">¿Quieres trabajar conmigo o tienes alguna pregunta? ¡Contáctame!</p>
+
+      <div class="flex flex-col gap-4 mt-8">
+        <!-- Whatsapp-->
+        <a href="https://wa.me/573013198901" target="_blank"
+          class="btn btn-success text-white hover:bg-green-600 rounded-full shadow-md hover:scale-105 transform transition duration-300 w-full sm:w-auto mx-auto flex items-center justify-center gap-3">
+          <i class="fab fa-whatsapp text-lg"></i>
+          Escríbeme por WhatsApp
+        </a>
+
+        <!-- Correo -->
+        <a href="mailto:teamdczx@gmail.com" 
+          class="flex items-center justify-center gap-3 bg-indigo-600 text-white px-5 py-3 rounded-full shadow-md hover:bg-indigo-700 hover:scale-105 transition-transform duration-300 w-full sm:w-auto mx-auto">
+          <i class="fas fa-envelope text-lg"></i>
+          teamdczx@gmail.com
+        </a>
+
+        <!-- GitHub -->
+        <a href="https://github.com/FourscodeIN" target="_blank"
+          class="flex items-center justify-center gap-3 bg-gray-800 text-white px-5 py-3 rounded-full shadow-md hover:bg-black hover:scale-105 transition-transform duration-300 w-full sm:w-auto mx-auto">
+          <i class="fab fa-github text-lg"></i>
+          github.com/FourscodeIN
+        </a>
+
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/brayan-mesa-palacio/" target="_blank"
+          class="flex items-center justify-center gap-3 bg-blue-600 text-white px-5 py-3 rounded-full shadow-md hover:bg-blue-700 hover:scale-105 transition-transform duration-300 w-full sm:w-auto mx-auto">
+          <i class="fab fa-linkedin text-lg"></i>
+          linkedin.com/in/brayan-mesa-palacio
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-[#030404] text-white py-4 text-center">
+    <p>&copy; 2025 - Portafolio Brym codeIN</p>
+  </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+</body>
+</html>
