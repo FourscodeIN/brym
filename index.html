@@ -9,7 +9,7 @@
   <script src="js/scroll.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
 </head>
 
 <body class="font-sans relative bg-gradient-to-br from-indigo-50 to-[#334155] text-gray-900">
@@ -18,10 +18,11 @@
     <div class="container mx-auto px-4 py-6 flex justify-between items-center">
       <div class="flex items-center transition-transform transform hover:scale-105 duration-300 cursor-pointer">
         <a href="#about">
-        <img src="assets/images/logo2-removebg-preview2.webp"
+          <img 
+            src="assets/images/logo2-removebg-preview2.webp"
             alt="Logo personal - codeIN"
-            class="h-10 sm:h-12 md:h-14 w-auto" />
-        </a>
+            class="h-10 sm:h-12 md:h-14 lg:h-16 w-auto max-w-full" />
+        </a>  
       </div>
       <nav class="flex flex-wrap gap-3 justify-center sm:justify-end">
         <a href="#about"
@@ -77,47 +78,45 @@
     </div>
   </section>
   
-  <section id="skills" class="py-24 px-6 text-center scroll-mt-28">
+<section id="skills" class="py-24 px-6 text-center scroll-mt-28">
     <div class="max-w-6xl mx-auto">
-      <!-- <div class="bg-white shadow-xl rounded-3xl p-10 border border-gray-200"> -->
-      <h3 class="text-4xl font-bold text-accent mb-12">Tecnologías y habilidades</h3>
+      <h3 class="text-4xl font-bold font-sans text-accent mb-12">Tecnologías y habilidades</h3>
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 w-full">
 
         <div class="flex flex-col items-center space-y-2 w-full px-4" data-aos="fade-up">
-          <img src="assets/images/java.png" alt="Java Logo" class="h-12 w-auto hover:scale-105 transition-transform duration-300" role="button">
+          <i class="fab fa-java text-4xl text-red-600 transition-transform transform hover:scale-105 duration-300 cursor-pointer" role="button"></i>
           <span class="text-sm font-medium">Java</span>
           <div class="w-full bg-gray-300 rounded-full h-3 overflow-hidden">
-            <div class="bg-accent h-3 rounded-full w-3/4"></div>
+            <div class="bg-indigo-600 h-3 rounded-full w-3/4"></div>
           </div>
         </div>
         <div class="flex flex-col items-center space-y-2 w-full px-4" data-aos="fade-up">
-          <!-- <i class="fas fa-code text-4xl text-purple-600 transition-transform transform hover:scale-105 duration-300" role="button"></i> -->
-          <img src="assets/images/visual-basico.png" alt="C# Logo" class="h-12 w-auto hover:scale-105 transition-transform duration-300" role="button">
+          <i class="fas fa-code text-4xl text-purple-600 transition-transform transform hover:scale-105 duration-300" role="button"></i>
           <span class="text-sm font-medium">C# / .NET</span>
           <div class="w-full bg-gray-300 rounded-full h-3 overflow-hidden">
-            <div class="bg-accent h-3 rounded-full w-3/4"></div>
+            <div class="bg-indigo-600 h-3 rounded-full w-3/4"></div>
           </div>
         </div>
         <div class="flex flex-col items-center space-y-2 w-full px-4" data-aos="fade-up">
-          <img src="assets/images/piton.png" alt="Python Logo" class="h-12 w-auto hover:scale-105 transition-transform duration-300" role="button">
+          <i class="fab fa-python text-4xl bg-gradient-to-r from-yellow-400 to-blue-700 text-transparent bg-clip-text transition-transform transform hover:scale-105 duration-300" role="button"></i>
           <span class="text-sm font-medium">Python</span>
           <div class="w-full bg-gray-300 rounded-full h-3 overflow-hidden">
-            <div class="bg-accent h-3 rounded-full w-3/4"></div>
+            <div class="bg-indigo-600 h-3 rounded-full w-3/4"></div>
           </div>
         </div>
         <div class="flex flex-col items-center space-y-2 w-full px-4" data-aos="fade-up">
-          <img src="assets/images/js.png" alt="JavaScript Logo" class="h-12 w-auto hover:scale-105 transition-transform duration-300" role="button">
+          <i class="fab fa-js text-4xl text-yellow-400 transition-transform transform hover:scale-105 duration-300" role="button"></i>
           <span class="text-sm font-medium">JavaScript</span>
           <div class="w-full bg-gray-300 rounded-full h-3 overflow-hidden">
-            <div class="bg-accent h-3 rounded-full w-2/4"></div>
+            <div class="bg-indigo-600 h-3 rounded-full w-2/4"></div>
           </div>
         </div>
         <div class="flex flex-col items-center space-y-2 w-full px-4" data-aos="fade-up">
-          <img src="assets/images/html-5.png" alt="html Logo" class="h-12 w-auto hover:scale-105 transition-transform duration-300" role="button">
+          <i class="fab fa-html5 text-4xl text-orange-500 transition-transform transform hover:scale-105 duration-300" role="button"></i>
           <span class="text-sm font-medium">HTML5</span>
         </div>
         <div class="flex flex-col items-center space-y-2 w-full px-4" data-aos="fade-up">
-          <img src="assets/images/css-3.png" alt="css Logo" class="h-12 w-auto hover:scale-105 transition-transform duration-300" role="button">
+          <i class="fab fa-css3-alt text-4xl text-blue-500 transition-transform transform hover:scale-105 duration-300" role="button"></i>
           <span class="text-sm font-medium">CSS3</span>
         </div>
         <div class="flex flex-col items-center space-y-2 w-full px-4" data-aos="fade-up">
@@ -125,17 +124,21 @@
           <span class="text-sm font-medium">SQL / MySQL</span>
         </div>
         <div class="flex flex-col items-center space-y-2 w-full px-4" data-aos="fade-up">
-          <img src="assets/images/social.png" alt="Git Logo" class="h-12 w-auto hover:scale-105 transition-transform duration-300" role="button">
+          <i class="fab fa-git-alt text-4xl text-red-500 transition-transform transform hover:scale-105 duration-300" role="button"></i>
           <span class="text-sm font-medium">Git</span>
         </div>
         <div class="flex flex-col items-center space-y-2 w-full px-4" data-aos="fade-up">
-          <img src="assets/images/github.png" alt="GitHub Logo" class="h-12 w-auto hover:scale-105 transition-transform duration-300" role="button">
+          <i class="fab fa-github text-4xl text-gray-800 transition-transform transform hover:scale-105 duration-300" role="button"></i>
           <span class="text-sm font-medium">GitHub</span>
         </div>
         <div class="flex flex-col items-center space-y-2 w-full px-4" data-aos="fade-up">
           <i class="fas fa-server text-4xl text-blue-700 transition-transform transform hover:scale-105 duration-300" role="button"></i>
           <span class="text-sm font-medium">ASP.NET</span>
         </div>
+        <!-- <div class="flex flex-col items-center space-y-2 w-full px-4" data-aos="fade-up">
+          <i class="fas fa-code text-4xl text-purple-600 transition-transform transform hover:scale-105 duration-300" role="button"></i>
+          <span class="text-sm font-medium">Visual Studio</span>
+        </div> -->
         <div class="flex flex-col items-center space-y-2 w-full px-4" data-aos="fade-up">
             <i class="fas fa-terminal text-4xl text-blue-500 transition-transform transform hover:scale-105 duration-300" role="button"></i>
             <span class="text-sm font-medium">VS & VS Code</span>
@@ -151,9 +154,8 @@
 
   <section id="projects" class="py-24 px-6 scroll-mt-28">
     <div class="max-w-6xl mx-auto">
-      <!-- <div class="bg-white shadow-xl rounded-3xl p-10 border border-gray-200"> -->
       <div class="shadow-xl rounded-3xl p-10">
-        <h3 class="text-4xl font-bold text-center text-accent mb-12">Proyectos destacados</h3>
+        <h3 class="text-4xl font-bold font-sans text-center text-accent mb-12">Proyectos destacados</h3>
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
 
           <!-- Proyecto 1 -->
@@ -163,7 +165,7 @@
                 <img src="assets/images/logoSistemaBibliotecario.png" alt="Vista previa de Library Manager" class="w-full h-40 object-cover rounded-t-xl" />
               </figure>
               <div class="p-4 text-center">
-                <h4 class="text-xl font-semibold text-accent mb-2">Library Manager</h4>
+                <h4 class="text-xl font-semibold font-sans text-accent mb-2">Library Manager</h4>
                 <p class="text-wrap mb-4">
                   Aplicación de escritorio para un sistema bibliotecario, con funcionalidades como registro, busqueda, eliminación y diferentes gestiones de recursos. Desarrollado con C#, MySQL y ASP.NET Framework.
                 </p>
@@ -182,7 +184,7 @@
                 <img src="assets/images/NovaBank.png" alt="Vista previa de NovaBank" class="w-full h-40 object-cover rounded-t-xl" />
               </figure>
               <div class="p-4 text-center">
-                <h4 class="text-xl font-semibold text-accent mb-2">NovaBank</h4>
+                <h4 class="text-xl font-semibold font-sans text-accent mb-2">NovaBank</h4>
                 <p class="text-wrap mb-4">
                   Aplicación de escritorio bancario con funcionalidades como transacciones, depósitos, retiros y consultas y gesitón de clientes. Desarrollado con Java, MySQL para el BackEnd y ASP Forms para el FrontEnd.
                 </p>
@@ -194,13 +196,13 @@
             </div>
           </div>
           <!-- Proyecto 3 -->
-          <div class="rounded-xl overflow-hidden shadow-sm border border-gray-400"> <!-- bg-gray-100 -->
+          <div class="rounded-xl overflow-hidden shadow-sm border border-gray-400"> 
             <div class="transition-transform transform hover:scale-105 duration-300">
               <figure>
                 <img src="assets/images/servipronew.png" alt="Vista previa de ServiPro" class="w-full h-40 object-cover rounded-t-xl" />
               </figure>
               <div class="p-4 text-center">
-                <h4 class="text-xl font-semibold text-accent mb-2">ServiPro</h4>
+                <h4 class="text-xl font-semibold font-sans text-accent mb-2">ServiPro</h4>
                 <p class="text-wrap mb-4">
                   Página Web para una asociación de servicio personalizado en el área de sistemas, ofreciendo así diferentes servicios como lo son soporte técnico, reparación y venta de insumos. Desarrollada con HTML5, TailwindCSS y JavaScript.
                 </p>
@@ -218,7 +220,7 @@
 
   <section id="contact" class="py-24 px-6 text-center scroll-mt-28">
     <div class="max-w-xl mx-auto">
-      <h3 class="text-3xl font-extrabold text-accent mb-6">Contacto</h3>
+      <h3 class="text-3xl font-extrabold font-sans text-accent mb-6">Contacto</h3>
       <p class="text-white mb-4">¿Quieres trabajar conmigo o tienes alguna pregunta? ¡Contáctame!</p>
 
       <div class="flex flex-col gap-4 mt-8">
@@ -230,8 +232,9 @@
         </a>
 
         <!-- Correo -->
-        <a href="mailto:teamdczx@gmail.com" 
-          class="flex items-center justify-center gap-3 bg-indigo-600 text-white px-5 py-3 rounded-full shadow-md hover:bg-indigo-700 hover:scale-105 transition-transform duration-300 w-full sm:w-auto mx-auto">
+        <a href="mailto:teamdczx@gmail.com" target="_blank"
+          class="flex items-center justify-center gap-3 bg-indigo-600 text-white px-5 py-3 rounded-full shadow-md hover:bg-indigo-700 hover:scale-105 transition-transform duration-300 w-full sm:w-auto mx-auto"
+          style="color: white !important; background-color: #4F46E5 !important;">
           <i class="fas fa-envelope text-lg"></i>
           teamdczx@gmail.com
         </a>
