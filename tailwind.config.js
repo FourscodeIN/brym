@@ -8,7 +8,12 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Inter', 'sans-serif'],   
+        sans: ['Fira Sans', 'sans-serif'],
+        serif: ['Literata', 'serif'],
+        inter: ['Inter', 'sans-serif'], 
+      },
+      backgroundImage: {
+      'header-code': "url('/assets/images/coder-graphics-code-stfmfwdop1zp1tm8.jpg')",
       },
     },
   },

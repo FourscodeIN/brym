@@ -10,42 +10,32 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;600&family=Literata:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
 </head>
 
-<body class="font-sans relative bg-gradient-to-br from-indigo-50 to-[#334155] text-gray-900">
+<body id="page-top" class="font-inter relative bg-gradient-to-br from-indigo-50 to-[#334155] text-gray-900">
 
-  <header class="sticky top-0 z-50 bg-[#030404] text-white shadow-md">
-    <div class="container mx-auto px-4 py-6 flex justify-between items-center">
-      <div class="flex items-center transition-transform transform hover:scale-105 duration-300 cursor-pointer">
-        <a href="#about">
-          <img 
-            src="assets/images/logo2-removebg-preview2.webp"
-            alt="Logo personal - codeIN"
-            class="h-10 sm:h-12 md:h-14 lg:h-16 w-auto max-w-full" />
-        </a>  
+   <header class="bg-header-code bg-cover bg-center h-96">
+    <nav id="mainNav" class="fixed top-0 left-0 w-full text-white shadow z-50 transition-colors duration-300">
+      <div class="container mx-auto px-4 flex items-center justify-between h-16">
+        <a href="#page-top" class="flex items-center">
+          <img src="assets/images/logo2-removebg-preview2.webp" alt="Logo" class="h-10 w-auto" />
+        </a>
+
+        <button class="block lg:hidden text-white focus:outline-none" id="menu-toggle">
+          <span>Menu</span>
+          <i class="fas fa-bars ml-2"></i>
+        </button>
+
+        <div class="hidden lg:flex space-x-6 text-sm uppercase font-semibold" id="navbar-menu">
+          <a href="#about" class="hover:text-accent transition">Sobre mí</a>
+          <a href="#skills" class="hover:text-accent transition">Tecnologías</a>
+          <a href="#projects" class="hover:text-accent transition">Proyectos</a>
+          <a href="#contact" class="hover:text-accent transition">Contacto</a>
+        </div>
       </div>
-      <nav class="flex flex-wrap gap-3 justify-center sm:justify-end">
-        <a href="#about"
-          class="btn btn-accent gap-3 text-white px-5 py-3 shadow-md hover:bg-neutral hover:scale-105 transition-transform duration-300 w-full sm:w-auto mx-auto">
-          <i class="fas fa-user"></i> Sobre mí
-        </a>
-
-        <a href="#skills"
-          class="btn btn-accent gap-3 text-white px-5 py-3 shadow-md hover:bg-neutral hover:scale-105 transition-transform duration-300 w-full sm:w-auto mx-auto">
-          <i class="fa-solid fa-screwdriver-wrench"></i> Tecnologías
-        </a>
-
-        <a href="#projects"
-          class="btn btn-accent gap-3 text-white px-5 py-3 shadow-md hover:bg-neutral hover:scale-105 transition-transform duration-300 w-full sm:w-auto mx-auto">
-          <i class="fas fa-laptop-code"></i> Proyectos
-        </a>
-
-        <a href="#contact"
-          class="btn btn-accent gap-3 text-white px-5 py-3 shadow-md hover:bg-neutral hover:scale-105 transition-transform duration-300 w-full sm:w-auto mx-auto">
-          <i class="fas fa-envelope"></i> Contacto
-        </a>
-      </nav>
-    </div>
+    </nav>
   </header>
 
   <section id="about" class="text-center py-24 scroll-mt-28">
@@ -58,7 +48,7 @@
     />
     </a>
     <h3 class="text-2xl font-semibold mb-2">Hola, soy <span class="text-accent">Brayan Mesa Palacio</span></h3> 
-    <p class="text-lg text-gray-800 mb-8">Desarrollador Full Stack Jr. | C# • Java • Python • .NET • SQL</p>
+    <p class="text-lg mb-8">Desarrollador Full Stack Jr. | C# • Java • Python • .NET • SQL</p>
 
     <div class="card w-full max-w-md bg-neutral shadow-xl mx-auto transition-transform transform hover:scale-105 duration-300">
       <div class="card-body items-center text-center">
@@ -70,7 +60,7 @@
           Apasionado por la creación de soluciones eficientes, escalables y centradas en el usuario.
         </p>
         <div class="card-actions mt-4">
-          <a href="#projects" class="flex items-center justify-center gap-3 bg-accent text-white px-5 py-3 rounded-full shadow-md hover:bg-[#184297] hover:scale-105 transition-transform duration-300 w-full sm:w-auto mx-auto">
+          <a href="#projects" class="flex items-center justify-center gap-3 bg-accent text-white px-5 py-3 rounded-full shadow-md hover:bg-[#254FDA] hover:scale-105 transition-transform duration-300 w-full sm:w-auto mx-auto">
             <i class="fas fa-rocket mr-2"></i>Ver proyectos
           </a>
         </div>
@@ -80,7 +70,7 @@
   
 <section id="skills" class="py-24 px-6 text-center scroll-mt-28">
     <div class="max-w-6xl mx-auto">
-      <h3 class="text-4xl font-bold font-sans text-accent mb-12">Tecnologías y habilidades</h3>
+      <h3 class="text-4xl font-bold font-inter text-accent mb-12">Tecnologías y habilidades</h3>
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 w-full">
 
         <div class="flex flex-col items-center space-y-2 w-full px-4" data-aos="fade-up">
@@ -155,7 +145,7 @@
   <section id="projects" class="py-24 px-6 scroll-mt-28">
     <div class="max-w-6xl mx-auto">
       <div class="shadow-xl rounded-3xl p-10">
-        <h3 class="text-4xl font-bold font-sans text-center text-accent mb-12">Proyectos destacados</h3>
+        <h3 class="text-4xl font-bold font-inter text-center text-accent mb-12">Proyectos destacados</h3>
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
 
           <!-- Proyecto 1 -->
@@ -165,7 +155,7 @@
                 <img src="assets/images/logoSistemaBibliotecario.png" alt="Vista previa de Library Manager" class="w-full h-40 object-cover rounded-t-xl" />
               </figure>
               <div class="p-4 text-center">
-                <h4 class="text-xl font-semibold font-sans text-accent mb-2">Library Manager</h4>
+                <h4 class="text-xl font-semibold font-inter text-accent mb-2">Library Manager</h4>
                 <p class="text-wrap mb-4">
                   Aplicación de escritorio para un sistema bibliotecario, con funcionalidades como registro, busqueda, eliminación y diferentes gestiones de recursos. Desarrollado con C#, MySQL y ASP.NET Framework.
                 </p>
@@ -184,9 +174,9 @@
                 <img src="assets/images/NovaBank.png" alt="Vista previa de NovaBank" class="w-full h-40 object-cover rounded-t-xl" />
               </figure>
               <div class="p-4 text-center">
-                <h4 class="text-xl font-semibold font-sans text-accent mb-2">NovaBank</h4>
+                <h4 class="text-xl font-semibold font-inter text-accent mb-2">NovaBank</h4>
                 <p class="text-wrap mb-4">
-                  Aplicación de escritorio bancario con funcionalidades como transacciones, depósitos, retiros y consultas y gesitón de clientes. Desarrollado con Java, MySQL para el BackEnd y ASP Forms para el FrontEnd.
+                  Aplicación de escritorio bancario con funcionalidades como transacciones, depósitos, retiros y consultas y gesitón de clientes. Desarrollado con Java, MySQL y ASP.NET Forms.
                 </p>
                 <a href="https://github.com/FourscodeIN/Aplicacion_Escritorio_JAVA" target="_blank"
                   class="inline-flex items-center gap-2 bg-gray-800 text-white px-5 py-2 rounded-lg hover:bg-black transition duration-300">
@@ -202,11 +192,11 @@
                 <img src="assets/images/servipronew.png" alt="Vista previa de ServiPro" class="w-full h-40 object-cover rounded-t-xl" />
               </figure>
               <div class="p-4 text-center">
-                <h4 class="text-xl font-semibold font-sans text-accent mb-2">ServiPro</h4>
+                <h4 class="text-xl font-semibold font-inter text-accent mb-2">ServiPro</h4>
                 <p class="text-wrap mb-4">
-                  Página Web para una asociación de servicio personalizado en el área de sistemas, ofreciendo así diferentes servicios como lo son soporte técnico, reparación y venta de insumos. Desarrollada con HTML5, TailwindCSS y JavaScript.
+                  Página Web para una asociación de servicio personalizado en el área de sistemas, ofreciendo así diferentes servicios como lo son soporte técnico, reparación y venta de insumos. Desarrollada con HTML5, CSS3 y WordPress.
                 </p>
-                <a href="https://github.com/FourscodeIN" target="_blank"
+                <a href="https://serviprof.com.co/" target="_blank"
                   class="inline-flex items-center gap-2 bg-gray-800 text-white px-5 py-2 rounded-lg hover:bg-black transition duration-300">
                   <i class="fab fa-github text-lg"></i> Ver en GitHub
                 </a>
@@ -220,13 +210,13 @@
 
   <section id="contact" class="py-24 px-6 text-center scroll-mt-28">
     <div class="max-w-xl mx-auto">
-      <h3 class="text-3xl font-extrabold font-sans text-accent mb-6">Contacto</h3>
+      <h3 class="text-3xl font-extrabold font-inter text-accent mb-6">Contacto</h3>
       <p class="text-white mb-4">¿Quieres trabajar conmigo o tienes alguna pregunta? ¡Contáctame!</p>
 
       <div class="flex flex-col gap-4 mt-8">
         <!-- Whatsapp-->
         <a href="https://wa.me/573013198901" target="_blank"
-          class="btn btn-success text-white hover:bg-green-600 rounded-full shadow-md hover:scale-105 transform transition duration-300 w-full sm:w-auto mx-auto flex items-center justify-center gap-3">
+          class="btn btn-success text-white hover:bg-green-400 rounded-full shadow-md hover:scale-105 transform transition duration-300 w-full sm:w-auto mx-auto flex items-center justify-center gap-3">
           <i class="fab fa-whatsapp text-lg"></i>
           Escríbeme por WhatsApp
         </a>

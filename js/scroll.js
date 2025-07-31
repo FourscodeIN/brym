@@ -14,6 +14,26 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
+  document.getElementById("menu-toggle").addEventListener("click", function () {
+    const menu = document.getElementById("navbar-menu");
+    menu.classList.toggle("hidden");
+  });
+
+  const nav = document.getElementById('mainNav');
+  const header = document.querySelector('header');
+
+    if (!nav || !header) return;
+
+    window.addEventListener('scroll', function () {
+      const triggerHeight = header.offsetHeight;
+
+      if (window.scrollY >= triggerHeight) {
+        nav.classList.add('bg-[#030404]');
+      } else {
+        nav.classList.remove('bg-[#030404]');
+      }
+    });
+
   const links = document.querySelectorAll("a");
 
   links.forEach(link => {
