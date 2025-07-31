@@ -13,7 +13,7 @@ module.exports = {
         inter: ['Inter', 'sans-serif'], 
       },
       backgroundImage: {
-        'header-code': "url('/assets/images/coder-graphics-code-stfmfwdop1zp1tm8.jpg')",
+        'header-code': "url('assets/images/coder-graphics-code-stfmfwdop1zp1tm8.jpg')",
       },
     },
   },
