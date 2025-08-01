@@ -14,25 +14,21 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  document.getElementById("menu-toggle").addEventListener("click", function () {
-    const menu = document.getElementById("navbar-menu");
-    menu.classList.toggle("hidden");
-  });
+  // Toggle menú responsive
+  const toggle = document.getElementById("menu-toggle");
+  const menu = document.getElementById("navbar-menu");
+  if (toggle && menu) {
+    toggle.addEventListener("click", () => menu.classList.toggle("hidden"));
+  }
 
-  const nav = document.getElementById('mainNav');
-  const header = document.querySelector('header');
-
-    if (!nav || !header) return;
-
-    window.addEventListener('scroll', function () {
+  const nav = document.getElementById("mainNav");
+  const header = document.querySelector("header");
+  if (nav && header) {
+    window.addEventListener("scroll", () => {
       const triggerHeight = header.offsetHeight;
-
-      if (window.scrollY >= triggerHeight) {
-        nav.classList.add('bg-[#030404]');
-      } else {
-        nav.classList.remove('bg-[#030404]');
-      }
+      nav.classList.toggle("bg-[#030404]", window.scrollY >= triggerHeight);
     });
+  }
 
   const links = document.querySelectorAll("a");
 
@@ -45,6 +41,21 @@ document.addEventListener("DOMContentLoaded", () => {
       link.style.transform = "scale(1)";
     });
   });
+
+  const backToTop = document.getElementById("backToTop");
+  if (backToTop) {
+    window.addEventListener("scroll", () => {
+      backToTop.classList.toggle("hidden", window.scrollY < 400);
+    });
+  }
+
+  document.addEventListener("scroll", () => {
+    document.querySelectorAll("[data-parallax]").forEach(el => {
+      const speed = parseFloat(el.getAttribute("data-parallax")) || 0.5;
+      el.style.transform = `translateY(${window.scrollY * speed}px)`;
+    });
+  });
+
   AOS.init({
     once: false,
     mirror: true, 
@@ -65,3 +76,11 @@ function reiniciarAnimacionesAOS() {
     AOS.refreshHard(); 
   }, 50);
 }
+
+window.addEventListener("load", () => {
+  const preloader = document.getElementById("preloader");
+  if (preloader) {
+    preloader.classList.add("opacity-0", "pointer-events-none", "transition-opacity", "duration-500");
+    setTimeout(() => preloader.remove(), 500);
+  }
+});

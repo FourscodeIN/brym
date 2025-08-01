@@ -1,9 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-    content: [
-    "./*.html",          
-    "./**/*.html",        
-    "./js/**/*.js"    
+  content: [
+    "./**/*.html",
+    "./js/**/*.js"
   ],
   theme: {
     extend: {
@@ -14,6 +13,13 @@ module.exports = {
       },
       backgroundImage: {
         'header-code': "url('/brym/assets/images/coder-graphics-code-stfmfwdop1zp1tm8.jpg')",
+        // 'header-code': "url('/assets/images/coder-graphics-code-stfmfwdop1zp1tm8.jpg')",
+      },
+     keyframes: {
+        float: {
+          "0%, 100%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(-10px)" },
+        },
       },
     },
   },
@@ -33,14 +39,14 @@ module.exports = {
       {
         miportafolio: {
           "primary": "#2563eb",     // Azul profesional
-          "secondary": "#64748b",   // Gris azulado
+          "secondary": "#64748b",   
           "accent": "#1e40af",      // Azul oscuro (hover/acciones)
-          "neutral": "#1e293b",     // Azul grisáceo oscuro (header/footer)
-          "base-100": "#f9fafb",    // Fondo principal
-          "info": "#3b82f6",        // Azul informativo
-          "success": "#10b981",     // Verde éxito
-          "warning": "#facc15",     // Amarillo más suave
-          "error": "#ef4444",       // Rojo error
+          "neutral": "#1e293b",   
+          "base-100": "#f9fafb",  
+          "info": "#3b82f6",        
+          "success": "#10b981",     
+          "warning": "#facc15",     
+          "error": "#ef4444",       
         },
       },
     ],
