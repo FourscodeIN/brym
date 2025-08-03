@@ -25,15 +25,12 @@ module.exports = {
   },
   plugins: [require("daisyui")],
     safelist: [
-    "bg-accent",
-    "text-yellow-400",
-    "text-red-600",
-    "text-indigo-700",
-    "text-emerald-600",
-    "text-gray-800",
-    "bg-indigo-600",
-    "bg-gray-300",
-    "bg-blue-500"
+    "bg-accent", "text-yellow-400", "text-red-600",
+    "text-indigo-700", "text-emerald-600", "text-gray-800",
+    "bg-indigo-600", "bg-gray-300", "bg-blue-500",
+    "hover:bg-[#0062D1]", "bg-blue-600", "hover:bg-blue-700",
+    "bg-indigo-600", "hover:bg-indigo-700","bg-[#58a6ff]",
+    "text-white",
   ],
   daisyui: {
     themes: [
