@@ -2113,7 +2113,7 @@ html {
 }
 
 .bg-header-code {
-  background-image: url('/assets/images/coder-graphics-code-stfmfwdop1zp1tm8.jpg');
+  background-image: url('/brym/assets/images/coder-graphics-code-stfmfwdop1zp1tm8.jpg');
 }
 
 .from-gray-900 {
@@ -2512,6 +2512,11 @@ html {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.hover\:bg-\[\#0062D1\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 98 209 / var(--tw-bg-opacity, 1));
+}
+
 .hover\:bg-\[\#1f6feb\]:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(31 111 235 / var(--tw-bg-opacity, 1));
@@ -2520,11 +2525,6 @@ html {
 .hover\:bg-\[\#21262d\]:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(33 38 45 / var(--tw-bg-opacity, 1));
-}
-
-.hover\:bg-\[\#254FDA\]:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(37 79 218 / var(--tw-bg-opacity, 1));
 }
 
 .hover\:bg-\[\#30363d\]:hover {
@@ -2545,21 +2545,6 @@ html {
 .hover\:bg-indigo-700:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(67 56 202 / var(--tw-bg-opacity, 1));
-}
-
-.hover\:bg-\[\#2E8FFF\]:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(46 143 255 / var(--tw-bg-opacity, 1));
-}
-
-.hover\:bg-\[\#0077FF\]:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 119 255 / var(--tw-bg-opacity, 1));
-}
-
-.hover\:bg-\[\#0062D1\]:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 98 209 / var(--tw-bg-opacity, 1));
 }
 
 .hover\:text-accent:hover {
@@ -2624,4 +2609,4 @@ html {
   .lg\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
-} 
+}
