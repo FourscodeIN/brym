@@ -12,8 +12,8 @@ module.exports = {
         inter: ['Inter', 'sans-serif'], 
       },
       backgroundImage: {
-        'header-code': "url('/brym/assets/images/coder-graphics-code-stfmfwdop1zp1tm8.jpg')",
-        // 'header-code': "url('/assets/images/coder-graphics-code-stfmfwdop1zp1tm8.jpg')",
+        // 'header-code': "url('/brym/assets/images/coder-graphics-code-stfmfwdop1zp1tm8.jpg')",
+        'header-code': "url('/assets/images/coder-graphics-code-stfmfwdop1zp1tm8.jpg')",
       },
      keyframes: {
         float: {
@@ -32,7 +32,8 @@ module.exports = {
     "text-emerald-600",
     "text-gray-800",
     "bg-indigo-600",
-    "bg-gray-300"
+    "bg-gray-300",
+    "bg-blue-500"
   ],
   daisyui: {
     themes: [

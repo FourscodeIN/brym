@@ -17,8 +17,22 @@ document.addEventListener("DOMContentLoaded", () => {
   // Toggle menú responsive
   const toggle = document.getElementById("menu-toggle");
   const menu = document.getElementById("navbar-menu");
+
   if (toggle && menu) {
-    toggle.addEventListener("click", () => menu.classList.toggle("hidden"));
+    toggle.addEventListener("click", () => {
+      const isMobile = window.innerWidth < 1024; // < lg breakpoint
+      menu.classList.toggle("hidden");
+
+      if (!menu.classList.contains("hidden") && isMobile) {
+        // Se va a mostrar en móvil
+        menu.classList.add("flex", "flex-col", "space-y-4", "mt-4");
+        menu.classList.remove("space-x-6"); // Evita layout de PC en móvil
+      } else if (isMobile) {
+        // Se va a ocultar en móvil
+        menu.classList.remove("flex", "flex-col", "space-y-4", "mt-4");
+        menu.classList.add("space-x-6"); // Restaurar para PC
+      }
+    });
   }
 
   const nav = document.getElementById("mainNav");
