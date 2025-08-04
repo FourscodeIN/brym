@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Brym codeIN</title>
+  <title>Brym CodeIN · Software Portfolio</title>
   <link rel="icon" href="favicon.ico" type="image/x-icon">
   <link href="dist/output.css?v=2.0" rel="stylesheet" />
-  
+
   <style>
-    html {
-      color-scheme: light only;
+    :root {
+      color-scheme: light;
     }
   </style>
 
@@ -20,13 +20,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;600&family=Literata:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 </head>
 
-<!-- <body id="page-top" class="font-inter relative bg-gradient-to-br from-indigo-50 to-[#334155] text-gray-900"> -->
-<!-- <body id="page-top" class="font-inter relative bg-gradient-to-br from-gray-900 via-slate-800 to-black text-white"> -->
 <body id="page-top" class="min-h-screen bg-[#0d1117] text-[#c9d1d9] font-inter">
 
 <div id="preloader" class="fixed inset-0 bg-[#0d1117] flex items-center justify-center z-50">
   <div class="loader ease-linear rounded-full border-8 border-t-8 border-gray-200 h-24 w-24"></div>
 </div>
+
 <style>
   .loader { border-top-color: #58a6ff; animation: spin 1s linear infinite; }
   @keyframes spin { to { transform: rotate(360deg); } }
@@ -55,7 +54,7 @@
 </header>
   
 <section id="about" class="text-center py-24 scroll-mt-28">
-  <h2 class="text-3xl md:text-4xl font-bold text-[#58a6ff] mb-6 tracking-wide">Perfil profesional</h2>
+  <h2 class="text-3xl md:text-4xl font-bold text-[#58a6ff] mb-6 tracking-wide transition hover:scale-105">Perfil profesional</h2>
   
   <a href="#about">
     <img 
@@ -88,75 +87,104 @@
   
 <section id="skills" class="py-24 px-6 text-center scroll-mt-28">
     <div class="max-w-6xl mx-auto">
-      <h3 class="text-4xl font-bold font-inter text-[#58a6ff] mb-12">Tecnologías y habilidades</h3>
+      <h3 class="text-4xl font-bold font-inter text-[#58a6ff] mb-12 transition hover:scale-105">Tecnologías y Frameworks</h3>
+
+      <div class="w-full mb-24">
+        <div class="flex items-center justify-center gap-4 mb-6">
+          <picture>
+            <img src="https://github.com/7oSkaaa/7oSkaaa/blob/main/Images/Programming_Languages.gif?raw=true" width="50" alt="Lenguajes" class="w-6 h-6" data-aos="fade-up">
+          </picture>
+          <h4 class="text-xl font-semibold text-gray-300" data-aos="fade-up">Lenguajes de programación</h4>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 w-full">
+
+          <div class="flex flex-col items-center justify-center w-full px-4 py-4 rounded-xl bg-[#161b22] hover:bg-[#21262d] transition duration-300 group mb-12" data-aos="fade-up">
+            <i class="fab fa-java text-4xl text-red-500 transition-transform transform group-hover:scale-110 duration-300" title="Java" role="button"></i>
+            <span class="text-sm font-medium text-[#c9d1d9] group-hover:text-[#58a6ff] mt-2">Java</span>
+            <div class="w-full bg-[#21262d] rounded-full h-3 overflow-hidden shadow-inner mt-3">
+              <div class="bg-[#58a6ff] h-3 rounded-full w-3/4 transition-all duration-500"></div>
+            </div>
+          </div>
+
+          <div class="flex flex-col items-center justify-center w-full px-4 py-4 rounded-xl bg-[#161b22] hover:bg-[#21262d] transition duration-300 group mb-12" data-aos="fade-up">
+            <i class="fas fa-code text-4xl text-purple-600 transition-transform transform group-hover:scale-110 duration-300" title="C#" role="button"></i>
+            <span class="text-sm font-medium text-[#c9d1d9] group-hover:text-[#58a6ff] mt-2">C# / .NET</span>
+            <div class="w-full bg-[#21262d] rounded-full h-3 overflow-hidden shadow-inner mt-3">
+              <div class="bg-[#58a6ff] h-3 rounded-full w-3/4 transition-all duration-500"></div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center justify-center w-full px-4 py-4 rounded-xl bg-[#161b22] hover:bg-[#21262d] transition duration-300 group mb-12" data-aos="fade-up">
+            <i class="fab fa-python text-4xl bg-gradient-to-r from-yellow-400 to-blue-700 text-transparent bg-clip-text transition-transform transform group-hover:scale-110 duration-300" title="Python" role="button"></i>
+            <span class="text-sm font-medium text-[#c9d1d9] group-hover:text-[#58a6ff] mt-2">Python</span>
+            <div class="w-full bg-[#21262d] rounded-full h-3 overflow-hidden shadow-inner mt-3">
+              <div class="bg-[#58a6ff] h-3 rounded-full w-3/4 transition-all duration-500"></div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center justify-center w-full px-4 py-4 rounded-xl bg-[#161b22] hover:bg-[#21262d] transition duration-300 group mb-12" title="JavaScript" data-aos="fade-up">
+            <i class="fab fa-js text-4xl text-yellow-400 transition-transform transform group-hover:scale-110 duration-300" role="button"></i>
+            <span class="text-sm font-medium text-[#c9d1d9] group-hover:text-[#58a6ff] mt-2">JavaScript</span>
+            <div class="w-full bg-[#21262d] rounded-full h-3 overflow-hidden shadow-inner mt-3">
+              <div class="bg-[#58a6ff] h-3 rounded-full w-3/4 transition-all duration-500"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="w-full mb-24">
+        <div class="flex items-center justify-center gap-4 mt-12 mb-6 pt-4">
+          <picture>
+            <img src="https://github.com/7oSkaaa/7oSkaaa/blob/main/Images/Software_Tools.gif?raw=true" width="50" alt="Herramientas" class="w-6 h-6" data-aos="fade-up">
+          </picture>
+          <h4 class="text-xl font-semibold text-gray-300" data-aos="fade-up">Software & Herramientas</h4>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 w-full">
+          <div class="flex flex-col items-center justify-center w-full px-4 py-4 rounded-xl bg-[#161b22] hover:bg-[#21262d] transition duration-300 group mb-12" title="HTML5" data-aos="fade-up">
+            <i class="fab fa-html5 text-4xl text-orange-500 transition-transform transform group-hover:scale-110 duration-300" role="button"></i>
+            <span class="text-sm font-medium group-hover:text-[#58a6ff] mt-2">HTML5</span>
+          </div>
+          <div class="flex flex-col items-center justify-center w-full px-4 py-4 rounded-xl bg-[#161b22] hover:bg-[#21262d] transition duration-300 group mb-12" title="CSS3" data-aos="fade-up">
+            <i class="fab fa-css3-alt text-4xl text-blue-500 transition-transform transform group-hover:scale-110 duration-300" role="button"></i>
+            <span class="text-sm font-medium group-hover:text-[#58a6ff] mt-2">CSS3</span>
+          </div>
+          <div class="flex flex-col items-center justify-center w-full px-4 py-4 rounded-xl bg-[#161b22] hover:bg-[#21262d] transition duration-300 group mb-12" title="SQL" data-aos="fade-up">
+            <i class="fas fa-database text-4xl text-indigo-700 transition-transform transform group-hover:scale-110 duration-300" role="button"></i>
+            <span class="text-sm font-medium group-hover:text-[#58a6ff] mt-2">SQL / MySQL</span>
+          </div>
+          <div class="flex flex-col items-center justify-center w-full px-4 py-4 rounded-xl bg-[#161b22] hover:bg-[#21262d] transition duration-300 group mb-12" title="Git" data-aos="fade-up">
+            <i class="fab fa-git-alt text-4xl text-red-500 transition-transform transform group-hover:scale-110 duration-300" role="button"></i>
+            <span class="text-sm font-medium group-hover:text-[#58a6ff] mt-2">Git</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex items-center justify-center gap-4 mt-12 mb-6 pt-4">
+        <picture>
+          <img src="https://github.com/7oSkaaa/7oSkaaa/blob/main/Images/IDEs.gif?raw=true" width="50" alt="IDEs" class="w-6 h-6" data-aos="fade-up">
+        </picture>
+        <h4 class="text-xl font-semibold text-gray-300" data-aos="fade-up">Frames & IDEs</h4>
+      </div>
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 w-full">
-
-      <div class="flex flex-col items-center justify-center w-full px-4 py-4 rounded-xl bg-[#161b22] hover:bg-[#21262d] transition duration-300 group" data-aos="fade-up">
-        <i class="fab fa-java text-4xl text-red-500 transition-transform transform group-hover:scale-110 duration-300" role="button"></i>
-        <span class="text-sm font-medium text-[#c9d1d9] group-hover:text-[#58a6ff] mt-2">Java</span>
-        <div class="w-full bg-[#21262d] rounded-full h-3 overflow-hidden shadow-inner mt-3">
-          <div class="bg-[#58a6ff] h-3 rounded-full w-3/4 transition-all duration-500"></div>
-        </div>
-      </div>
-
-        <div class="flex flex-col items-center justify-center w-full px-4 py-4 rounded-xl bg-[#161b22] hover:bg-[#21262d] transition duration-300 group" data-aos="fade-up">
-          <i class="fas fa-code text-4xl text-purple-600 transition-transform transform group-hover:scale-110 duration-300" role="button"></i>
-          <span class="text-sm font-medium text-[#c9d1d9] group-hover:text-[#58a6ff] mt-2">C# / .NET</span>
-          <div class="w-full bg-[#21262d] rounded-full h-3 overflow-hidden shadow-inner mt-3">
-            <div class="bg-[#58a6ff] h-3 rounded-full w-3/4 transition-all duration-500"></div>
+          <div class="flex flex-col items-center justify-center w-full px-4 py-4 rounded-xl bg-[#161b22] hover:bg-[#21262d] transition duration-300 group" title="Github" data-aos="fade-up">
+            <i class="fab fa-github text-4xl text-[#c9d1d9] transition-transform transform group-hover:scale-110 duration-300" role="button"></i>
+            <span class="text-sm font-medium group-hover:text-[#58a6ff] mt-2">GitHub</span>
+          </div>
+          <div class="flex flex-col items-center justify-center w-full px-4 py-4 rounded-xl bg-[#161b22] hover:bg-[#21262d] transition duration-300 group" title=".NET" data-aos="fade-up">
+            <i class="fas fa-server text-4xl text-blue-700 transition-transform transform group-hover:scale-110 duration-300" role="button"></i>
+            <span class="text-sm font-medium group-hover:text-[#58a6ff] mt-2">ASP.NET</span>
+          </div>
+          <!-- <div class="flex flex-col items-center space-y-2 w-full px-4" data-aos="fade-up">
+            <i class="fas fa-code text-4xl text-purple-600 transition-transform transform hover:scale-105 duration-300" role="button"></i>
+            <span class="text-sm font-medium">Visual Studio</span>
+          </div> -->
+          <div class="flex flex-col items-center justify-center w-full px-4 py-4 rounded-xl bg-[#161b22] hover:bg-[#21262d] transition duration-300 group" title="Visual" data-aos="fade-up">
+              <i class="fas fa-terminal text-4xl text-blue-500 ransition-transform transform group-hover:scale-110 duration-300" role="button"></i>
+              <span class="text-sm font-medium group-hover:text-[#58a6ff] mt-2">VS & VS Code</span>
+          </div>
+          <div class="flex flex-col items-center justify-center w-full px-4 py-4 rounded-xl bg-[#161b22] hover:bg-[#21262d] transition duration-300 group" title="Agiles" data-aos="fade-up">
+            <i class="fas fa-code-branch text-4xl text-emerald-600 transition-transform transform group-hover:scale-110 duration-300" role="button"></i>
+            <span class="text-sm font-medium group-hover:text-[#58a6ff] mt-2">Metodologías Ágiles</span>
           </div>
         </div>
-        <div class="flex flex-col items-center justify-center w-full px-4 py-4 rounded-xl bg-[#161b22] hover:bg-[#21262d] transition duration-300 group" data-aos="fade-up">
-          <i class="fab fa-python text-4xl bg-gradient-to-r from-yellow-400 to-blue-700 text-transparent bg-clip-text transition-transform transform group-hover:scale-110 duration-300" role="button"></i>
-          <span class="text-sm font-medium text-[#c9d1d9] group-hover:text-[#58a6ff] mt-2">Python</span>
-          <div class="w-full bg-[#21262d] rounded-full h-3 overflow-hidden shadow-inner mt-3">
-            <div class="bg-[#58a6ff] h-3 rounded-full w-3/4 transition-all duration-500"></div>
-          </div>
-        </div>
-        <div class="flex flex-col items-center justify-center w-full px-4 py-4 rounded-xl bg-[#161b22] hover:bg-[#21262d] transition duration-300 group" data-aos="fade-up">
-          <i class="fab fa-js text-4xl text-yellow-400 transition-transform transform group-hover:scale-110 duration-300" role="button"></i>
-          <span class="text-sm font-medium text-[#c9d1d9] group-hover:text-[#58a6ff] mt-2">JavaScript</span>
-          <div class="w-full bg-[#21262d] rounded-full h-3 overflow-hidden shadow-inner mt-3">
-            <div class="bg-[#58a6ff] h-3 rounded-full w-3/4 transition-all duration-500"></div>
-          </div>
-        </div>
-        <div class="flex flex-col items-center justify-center w-full px-4 py-4 rounded-xl bg-[#161b22] hover:bg-[#21262d] transition duration-300 group" data-aos="fade-up">
-          <i class="fab fa-html5 text-4xl text-orange-500 transition-transform transform group-hover:scale-110 duration-300" role="button"></i>
-          <span class="text-sm font-medium group-hover:text-[#58a6ff] mt-2">HTML5</span>
-        </div>
-        <div class="flex flex-col items-center justify-center w-full px-4 py-4 rounded-xl bg-[#161b22] hover:bg-[#21262d] transition duration-300 group" data-aos="fade-up">
-          <i class="fab fa-css3-alt text-4xl text-blue-500 transition-transform transform group-hover:scale-110 duration-300" role="button"></i>
-          <span class="text-sm font-medium group-hover:text-[#58a6ff] mt-2">CSS3</span>
-        </div>
-        <div class="flex flex-col items-center justify-center w-full px-4 py-4 rounded-xl bg-[#161b22] hover:bg-[#21262d] transition duration-300 group" data-aos="fade-up">
-          <i class="fas fa-database text-4xl text-indigo-700 transition-transform transform group-hover:scale-110 duration-300" role="button"></i>
-          <span class="text-sm font-medium group-hover:text-[#58a6ff] mt-2">SQL / MySQL</span>
-        </div>
-        <div class="flex flex-col items-center justify-center w-full px-4 py-4 rounded-xl bg-[#161b22] hover:bg-[#21262d] transition duration-300 group" data-aos="fade-up">
-          <i class="fab fa-git-alt text-4xl text-red-500 transition-transform transform group-hover:scale-110 duration-300" role="button"></i>
-          <span class="text-sm font-medium group-hover:text-[#58a6ff] mt-2">Git</span>
-        </div>
-        <div class="flex flex-col items-center justify-center w-full px-4 py-4 rounded-xl bg-[#161b22] hover:bg-[#21262d] transition duration-300 group" data-aos="fade-up">
-          <i class="fab fa-github text-4xl text-[#c9d1d9] transition-transform transform group-hover:scale-110 duration-300" role="button"></i>
-          <span class="text-sm font-medium group-hover:text-[#58a6ff] mt-2">GitHub</span>
-        </div>
-        <div class="flex flex-col items-center justify-center w-full px-4 py-4 rounded-xl bg-[#161b22] hover:bg-[#21262d] transition duration-300 group" data-aos="fade-up">
-          <i class="fas fa-server text-4xl text-blue-700 transition-transform transform group-hover:scale-110 duration-300" role="button"></i>
-          <span class="text-sm font-medium group-hover:text-[#58a6ff] mt-2">ASP.NET</span>
-        </div>
-        <!-- <div class="flex flex-col items-center space-y-2 w-full px-4" data-aos="fade-up">
-          <i class="fas fa-code text-4xl text-purple-600 transition-transform transform hover:scale-105 duration-300" role="button"></i>
-          <span class="text-sm font-medium">Visual Studio</span>
-        </div> -->
-        <div class="flex flex-col items-center justify-center w-full px-4 py-4 rounded-xl bg-[#161b22] hover:bg-[#21262d] transition duration-300 group" data-aos="fade-up">
-            <i class="fas fa-terminal text-4xl text-blue-500 ransition-transform transform group-hover:scale-110 duration-300" role="button"></i>
-            <span class="text-sm font-medium group-hover:text-[#58a6ff] mt-2">VS & VS Code</span>
-        </div>
-        <div class="flex flex-col items-center justify-center w-full px-4 py-4 rounded-xl bg-[#161b22] hover:bg-[#21262d] transition duration-300 group" data-aos="fade-up">
-          <i class="fas fa-code-branch text-4xl text-emerald-600 transition-transform transform group-hover:scale-110 duration-300" role="button"></i>
-          <span class="text-sm font-medium group-hover:text-[#58a6ff] mt-2">Metodologías Ágiles</span>
-        </div>
-      </div>
       </div>
     </div>
   </section>
@@ -164,7 +192,7 @@
 <section id="projects" class="py-24 px-6 scroll-mt-28 bg-[#0d1117] text-[#c9d1d9]">
   <div class="max-w-6xl mx-auto">
     <div class="shadow-xl rounded-3xl p-10 bg-[#161b22]">
-      <h3 class="text-4xl font-bold font-inter text-center text-[#58a6ff] mb-12">Proyectos destacados</h3>
+      <h3 class="text-4xl font-bold font-inter text-center text-[#58a6ff] mb-12 transition hover:scale-105">Proyectos destacados</h3>
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
 
         <!-- Proyecto 1 -->
@@ -227,7 +255,7 @@
 
 <section id="contact" class="py-24 px-6 text-center scroll-mt-28">
   <div class="max-w-xl mx-auto">
-    <h3 class="text-3xl font-extrabold font-inter text-[#58a6ff] mb-6">Contacto</h3>
+    <h3 class="text-3xl font-extrabold font-inter text-[#58a6ff] mb-6 transition hover:scale-105">Contacto</h3>
     <p class="text-white mb-4">¿Quieres trabajar conmigo o tienes alguna pregunta? ¡Contáctame!</p>
 
     <div class="flex flex-col gap-4 mt-8">
