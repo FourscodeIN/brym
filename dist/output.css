@@ -2124,7 +2124,7 @@ html {
 }
 
 .bg-header-code {
-  background-image: url('/brym/assets/images/coder-graphics-code-stfmfwdop1zp1tm8.jpg');
+  background-image: url('/brym/assets/images/coder-graphics-code-stfmfwdop1zp1tm8.wepb');
 }
 
 .from-yellow-400 {
@@ -2540,11 +2540,6 @@ html {
 
   .md\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-  .md\:text-4xl {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
   }
 }
 
