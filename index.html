@@ -71,11 +71,11 @@
 </header>
   
 <section id="about" class="py-24 px-6 text-center scroll-mt-28">
-<div class="inline-block overflow-hidden">
-  <h3 class="text-4xl font-bold font-inter text-[#58a6ff] mb-12 transition-transform duration-300 hover:scale-105">
-    Perfil profesional
-  </h3>
-</div>
+  <div class="inline-block">
+    <h3 class="text-4xl font-bold font-inter text-[#58a6ff] mb-12 transition-transform duration-300 hover:scale-105">
+      Perfil profesional
+    </h3>
+  </div>
   
   <a href="#about">
     <img 
@@ -173,15 +173,15 @@
             <i class="fab fa-git-alt text-4xl text-red-500" role="button"></i>
             <span class="text-sm font-medium mt-2">Git</span>
           </div>
-          <!-- Laravel -->
-          <div class="flex flex-col items-center justify-center w-full px-4 py-4 rounded-xl bg-[#161b22] hover:bg-[#21262d] transition-transform duration-300 group mb-6 hover:scale-105" title="Laravel" >
-            <i class="fab fa-laravel text-4xl text-red-600" role="button"></i>
-            <span class="text-sm font-medium mt-2 text-gray-300">Laravel</span>
-          </div>
           <!-- Node.js -->
           <div class="flex flex-col items-center justify-center w-full px-4 py-4 rounded-xl bg-[#161b22] hover:bg-[#21262d] transition-transform duration-300 group mb-6 hover:scale-105" title="Node" >
             <i class="fab fa-node-js text-4xl text-green-600" role="button"></i>
             <span class="text-sm font-medium mt-2 text-gray-300">Node.js</span>
+          </div>
+          <!-- Laravel -->
+          <div class="flex flex-col items-center justify-center w-full px-4 py-4 rounded-xl bg-[#161b22] hover:bg-[#21262d] transition-transform duration-300 group mb-6 hover:scale-105" title="Laravel" >
+            <i class="fab fa-laravel text-4xl text-red-600" role="button"></i>
+            <span class="text-sm font-medium mt-2 text-gray-300">Laravel</span>
           </div>
           <!-- Vue.js -->
           <div class="flex flex-col items-center justify-center w-full px-4 py-4 rounded-xl bg-[#161b22] hover:bg-[#21262d] transition-transform duration-300 group mb-6 hover:scale-105" title="Vue" >
@@ -246,7 +246,7 @@
           </div>
         </div> -->
         <!-- Proyecto 2 -->
-        <div class=" rounded-xl overflow-hidden shadow-sm border border-[#30363d] bg-[#0d1117] transition hover:scale-[1.03] duration-300">
+        <div class="rounded-xl overflow-hidden shadow-sm border border-[#30363d] bg-[#0d1117] transition hover:scale-[1.03] duration-300">
           <div class="transition-transform transform hover:scale-105 duration-300">
             <figure>
               <img src="assets/images/NovaBank.webp" alt="Vista previa de NovaBank" class="w-full h-40 object-cover" />
@@ -265,23 +265,23 @@
         </div>
 
         <!-- Proyecto 3 -->
-        <div class=" rounded-xl overflow-hidden shadow-sm border border-[#30363d] bg-[#0d1117] transition hover:scale-[1.03] duration-300">
+        <div class="rounded-xl overflow-hidden shadow-sm border border-[#30363d] bg-[#0d1117] transition hover:scale-[1.03] duration-300">
           <div class="transition-transform transform hover:scale-105 duration-300">
             <figure>
               <img src="assets/images/LOGO-SERVIPRO.webp" alt="Vista previa de ServiPro" class="w-full h-40 object-cover" />
             </figure>
-            <div class="p-5 text-center">
+            <div class="p-5 text-center flex flex-col h-full">
               <h4 class="text-xl font-semibold text-[#58a6ff] mb-2">ServiPro</h4>
               <p class="text-sm mb-4 leading-relaxed">
                 Página Web para una asociación de servicio personalizado en el área de sistemas, ofreciendo así diferentes servicios como lo son soporte técnico, reparación y venta de insumos. Desarrollada con HTML, CSS y Javascript.
               </p>
-              <div class="flex flex-wrap justify-center gap-3 mt-4">
+              <div class="flex flex-col sm:flex-row justify-center items-center gap-3 mt-auto">
                 <a href="https://github.com/FourscodeIN/Servipro---Desarrollo" target="_blank"
-                  class="inline-flex items-center justify-center gap-2 bg-[#21262d] text-[#c9d1d9] px-5 py-2 rounded-lg hover:bg-[#30363d] transition duration-300 w-full sm:w-auto">
+                  class="flex items-center justify-center gap-2 bg-[#21262d] text-[#c9d1d9] px-5 py-2 rounded-lg hover:bg-[#30363d] transition duration-300 w-full sm:w-auto">
                   <i class="fab fa-github text-lg"></i> Ver en GitHub
                 </a>
                 <a href="https://serviprof.com.co/" target="_blank"
-                  class="inline-flex items-center justify-center gap-2 bg-blue-500 text-[#c9d1d9] px-5 py-2 rounded-lg hover:bg-[#1f6feb] transition duration-300 w-full sm:w-auto">
+                  class="flex items-center justify-center gap-2 bg-blue-500 text-[#c9d1d9] px-5 py-2 rounded-lg hover:bg-[#1f6feb] transition duration-300 w-full sm:w-auto">
                   <i class="fas fa-globe text-lg"></i> Plataforma
                 </a>
               </div>
@@ -290,7 +290,7 @@
         </div>
 
         <!-- Proyecto 4 -->
-        <div class=" rounded-xl overflow-hidden shadow-sm border border-[#30363d] bg-[#0d1117] transition hover:scale-[1.03] duration-300">
+        <div class="rounded-xl overflow-hidden shadow-sm border border-[#30363d] bg-[#0d1117] transition hover:scale-[1.03] duration-300">
           <div class="transition-transform transform hover:scale-105 duration-300">
             <figure>
               <img src="assets/images/Black-and-White-Minimalist-Modern-Clean-Technology-Logo-.webp" alt="Vista previa de proyecto IA" class="w-full h-40 object-cover" />
@@ -309,7 +309,7 @@
         </div>
 
         <!-- Proyecto 5 -->
-        <div class=" rounded-xl overflow-hidden shadow-sm border border-[#30363d] bg-[#0d1117] transition hover:scale-[1.03] duration-300">
+        <div class="rounded-xl overflow-hidden shadow-sm border border-[#30363d] bg-[#0d1117] transition hover:scale-[1.03] duration-300">
           <div class="transition-transform transform hover:scale-105 duration-300">
             <figure>
               <img src="assets/images/Logotipo-de-empresa-de-programación-de-sistemas-y-tecnología-_1_.webp" alt="Vista previa de AuthManagement" class="w-full h-40 object-cover" />
